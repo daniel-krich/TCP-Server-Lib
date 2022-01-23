@@ -314,7 +314,7 @@ namespace dk
     /// <param name="data">string</param>
     void ConnectedClient::Send(std::string data)
     {
-        send(this->socket, data.c_str() + '\0', data.length() + 1, 0);
+        send(this->socket, data.c_str() + '\0', (int)data.length() + 1, 0);
     }
 
     /// <summary>
