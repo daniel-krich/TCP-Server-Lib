@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{d51c9afd-3bd7-4f81-88c0-e1a705732dc9}</ProjectGuid>
-    <RootNamespace>ServerFrameWork</RootNamespace>
+    <RootNamespace>ServerFramework</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>ServerFramework</ProjectName>
   </PropertyGroup>
