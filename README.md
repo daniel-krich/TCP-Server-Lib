@@ -4,8 +4,8 @@ Description:
 - Single threaded.
 - Multi-client.
 - Non-blocking.
-- Lightweight and simple.
-- For Windows.
+- Lightweight, simple, single include file.
+- Windows.
 
 ## Usage template
 Must define all the standard callbacks, and you're ready to go.
@@ -19,8 +19,8 @@ Must define all the standard callbacks, and you're ready to go.
 
 int main()
 {
-	dk::TCPServer* server = new dk::TCPServer(SERVER_PORT);
-	return 0;
+    dk::TCPServer* server = new dk::TCPServer(SERVER_PORT);
+    return 0;
 }
 
 void dk::TCPServer::OnServerStartup(dk::TCPServer* server)
