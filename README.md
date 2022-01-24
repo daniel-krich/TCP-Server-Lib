@@ -5,7 +5,7 @@ Description:
 - Multi-client.
 - Non-blocking.
 - Lightweight, simple, single .hpp include file.
-- Windows.
+- Tested on Windows 10.
 
 ## Usage template
 Must define all the standard callbacks.
