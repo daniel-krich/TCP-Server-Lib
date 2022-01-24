@@ -4,11 +4,11 @@ Description:
 - Single threaded.
 - Multi-client.
 - Non-blocking.
-- Lightweight, simple, single include file.
+- Lightweight, simple, single .hpp include file.
 - Windows.
 
 ## Usage template
-Must define all the standard callbacks, and you're ready to go.
+Must define all the standard callbacks.
 - **OnServerStartup**
 - **OnClientConnect**
 - **OnMessageReceive**
@@ -29,10 +29,10 @@ void dk::TCPServer::OnServerStartup(dk::TCPServer* server)
 
 bool dk::TCPServer::OnClientConnect(dk::ConnectedClient* client)
 {
-    return true; // Accept incoming connection
+    return true; //  Accept incoming connection
 }
 
-void dk::TCPServer::OnMessageReceive(dk::ConnectedClient* client, char* data)
+void dk::TCPServer::OnMessageReceive(dk::ConnectedClient* client, std::vector<char>* data)
 {
 }
 
