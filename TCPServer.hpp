@@ -56,7 +56,7 @@ namespace dk
         /// </summary>
         /// <param name="client">client pointer</param>
         /// <param name="data">data pointer</param>
-        void OnMessageReceive(ConnectedClient* client, char* data);
+        void OnMessageReceive(ConnectedClient* client, std::vector<char>* data);
 
         /// <summary>
         /// Called when client request a connection.
@@ -249,7 +249,7 @@ namespace dk
                     } while (RecvStatus > 0);
                     this->recvBuffer.resize((size_t)BufferFreePointer, 0);
                     //
-                    this->OnMessageReceive(Client, this->recvBuffer.data());
+                    this->OnMessageReceive(Client, &this->recvBuffer);
                     //
                     this->recvBuffer.clear();
                     this->recvBuffer.shrink_to_fit();

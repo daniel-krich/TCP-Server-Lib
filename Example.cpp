@@ -29,10 +29,10 @@ bool dk::TCPServer::OnClientConnect(dk::ConnectedClient* client)
 	}
 }
 
-void dk::TCPServer::OnMessageReceive(dk::ConnectedClient* client, char* data)
+void dk::TCPServer::OnMessageReceive(dk::ConnectedClient* client, std::vector<char>* data)
 {
-	std::cout << "IP: " << client->GetIP() << ", Data: " << data << std::endl;
-	client->Send("[SERVER] You've sent: " + std::string(data));
+	std::cout << "IP: " << client->GetIP() << ", Data: " << data->data() << std::endl;
+	client->Send("[SERVER] You've sent: " + std::string(data->data()));
 }
 
 void dk::TCPServer::OnClientDisconnect(dk::ConnectedClient* client)
