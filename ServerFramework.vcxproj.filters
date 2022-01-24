@@ -2,8 +2,9 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="Example.cpp" />
+    <ClCompile Include="TCPServer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TCPServer.hpp" />
+    <ClInclude Include="TCPServer.h" />
   </ItemGroup>
 </Project>

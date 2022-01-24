@@ -4,7 +4,7 @@ Description:
 - Single threaded.
 - Multi-client.
 - Non-blocking.
-- Lightweight, simple, single .hpp include file.
+- Lightweight, simple.
 - Tested on Windows 10.
 
 ## Usage template
@@ -15,7 +15,7 @@ Must define all the standard callbacks.
 - **OnClientDisconnect**
 
 ```C++
-#include "TCPServer.hpp"
+#include "TCPServer.h"
 
 int main()
 {
